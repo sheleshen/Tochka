@@ -29,6 +29,13 @@
     --text-brown: #6B6250;
     --text-lbrown: #B8A88A;
     --text-disabled: #6B6B6B;
+    --text-sand: #A18348;
+
+    /* FIELD */
+    --field-bg: #F7F7FD;
+    --field-title: #6B6B6B;
+    --field-text: #212121;
+    --field-icon: #212121;
 
     /*  BTN */
 
@@ -85,9 +92,11 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
 }
 
 p {
+    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 140%;
+    color: var(--text-black);
 }
 
 a, .link-logo {
@@ -157,6 +166,7 @@ a:hover {
     text-align: center;
     padding: 16px 32px;
     width: fit-content;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -195,6 +205,7 @@ a:hover {
     text-align: center;
     padding: 16px 32px;
     width: fit-content;
+    cursor: pointer;
 }
 
 .btn-sec:hover {
@@ -251,8 +262,9 @@ h1 {
     font-weight: 700;
     font-size: 56px;
     line-height: 110%;
-    color: var(--white);
+    color: var(--text-white);
     text-transform: uppercase;
+    text-align: center;
 }
 
 @media (max-width: 600px) {
@@ -272,8 +284,8 @@ h2 {
     font-size: 48px;
     line-height: 120%;
     color: var(--text-black);
-    padding-top: 80px;
-    text-transform: uppercase;
+    padding: 80px 0px 32px 0px;
+    text-align: center;
 }
 
 .img-object-fit {
@@ -310,6 +322,148 @@ h2 {
 }
 
 /* hero block */
+
+.bg-image {
+    background-image: url(/images/bg-hero.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 145px 0px;
+}
+
+.title-hero {
+    padding-bottom: 16px;
+}
+
+.rectangle-hero {
+    width: 1px;
+    height: 52px;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.description-hero {
+    color: var(--text-white);
+    padding: 32px 0px;
+}
+
+/* Выбор отеля форма */
+
+.filter-hero {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    gap: 24px;
+    padding-bottom: 80px;
+}
+
+.field-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: var(--field-bg);
+    border-radius: 4px;
+    padding: 8px 20px;
+    max-height: 56px;
+    max-width: 240px;
+}
+
+label {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 133%;
+    color: var(--field-title);
+}
+
+.entry-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    padding: 0;
+    color: var(--field-text);
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.input-field:active {
+    outline: none;
+    border: none;
+}
+
+.field-icon {
+    font-size: 20px;
+    color: var(--field-icon);
+}
+
+/* hotels */
+
+
+
+/* gallery */
+
+
+
+/* news */
+
+
+
+/* Идеи для отдыха */
+
+
+
+/* Полезные ссылки */
+
+.news-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 27px;
+}
+
+.news-item {
+    width: calc((100% - 27px*3)/4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px 29px;
+    border-radius: 20px;
+}
+
+.news-item:hover {
+    box-shadow: 0px 16px 24px rgba(107, 107, 107, 0.2);
+    transition: box-shadow 350ms linear;
+}
+
+.news-title {
+    font-weight: 700;
+    color: var(--text-sand);
+    padding-bottom: 24px;
+}
+
+.news-description {
+    padding-bottom: 24px;
+}
+
+/* Локации отелей «На карте» */
+
+.maps-img {
+    min-height: 600px;
+    background-image: url(/images/maps-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
 
 /* footer */
 
