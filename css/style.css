@@ -17,6 +17,7 @@
     /* BG */
     --bg-elight: #F4F3FE;
     --bg-light: #E3DED3;
+    --bg-white: #ffffff;
 
     /* STROKE */
     --stroke-pink: #FFB9C5;
@@ -30,6 +31,7 @@
     --text-lbrown: #B8A88A;
     --text-disabled: #6B6B6B;
     --text-sand: #A18348;
+    --text-lgery: #DEDEDE;
 
     /* FIELD */
     --field-bg: #F7F7FD;
@@ -228,6 +230,11 @@ a:hover {
     gap: var(--gap-10);
 }
 
+.btn-ctr {
+    margin: 0 auto;
+    display: block;
+}
+
 /* РАЗМЕРЫ КНОПОК - normal по умолчанию */
 
 .large {
@@ -408,19 +415,205 @@ label {
 
 /* hotels */
 
+.section-hotels {
+    padding: 80px 0px;
+}
 
+.hotels-list {
+    display: flex;
+    overflow: hidden;
+}
+
+.hotels-item {
+    margin-bottom: 48px;
+    overflow: hidden;
+    min-width: 100%;
+}
+
+.hotels-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.hotels-sb {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text-hotels {
+    width: 45%;
+    padding-bottom: 30px;
+}
+
+.title-hotels {
+    text-align: left;
+    padding: 0px 0px 16px 0px;
+    text-transform: uppercase;
+}
+
+.accent-hotels {
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--text-disabled);
+    padding-bottom: 24px;
+}
+
+.description-hotels {
+    padding-bottom: 28px;
+}
+
+.info-hotels {
+    background-color: var(--bg-white);
+    box-shadow: 0px 8px 16px rgba(107, 107, 107, 0.2);
+    border-radius: 20px;
+    padding: 36px 46px;
+
+    display: flex;
+    gap: 22px;
+    width: 80%;
+    margin-bottom: 48px;
+}
+
+.info-title {
+    display: flex;
+    align-items: center;
+
+    font-weight: 300;
+    font-size: 24px;
+    width: 20%;
+}
+
+.info-list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    width: calc((100% - 8px)/2);
+}
+
+.info-item-one {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.info-item-three {
+    display: flex;
+    align-items: center;
+    width: calc((100% - 8px*2)/3);
+}
+
+.info-accent {
+    font-size: 60px;
+    color: var(--text-lbrown);
+    padding-right: 16px;
+}
+
+.info-description {
+    font-size: 16px;
+    color: var(--text-disabled);
+}
+
+.karusel-list {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.karusel-item {
+    background-color: var(--stroke-grey);
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.karusel-item-active {
+    background-color: var(--text-disabled);
+}
 
 /* gallery */
 
+.gallery-list {
+    display: flex;
+    gap: 8px;
+    padding-bottom: 8px;
+}
 
+.gallery-list-ver {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 
 /* news */
 
+.reference-list {
+    display: flex;
+    gap: 24px;
+    padding-bottom: 40px;
+}
 
+.reference-item {
+    width: calc((100% - 24px*2)/3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.reference-title {
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+
+    padding: 24px 0px;
+}
+
+.reference-description {
+    font-size: 16px;
+    text-align: center;
+}
 
 /* Идеи для отдыха */
 
+.ideas-list {
+    display: flex;
+    gap: 0;
+    border-top: 1px solid var(--main-sand-light);
+}
 
+.ideas-item {
+    width: calc(100% / 3);
+    padding: 40px 26px 0px 26px;
+    border-right: 1px solid var(--main-sand-light);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ideas-item:last-child {
+    border-right: 0px solid var(--main-sand-light);
+}
+
+.ideas-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%; 
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+.ideas-description {
+    text-align: center;
+    padding-bottom: 24px;
+}
 
 /* Полезные ссылки */
 
@@ -437,11 +630,23 @@ label {
     justify-content: space-between;
     padding: 32px 29px;
     border-radius: 20px;
+    overflow: hidden;
 }
 
 .news-item:hover {
     box-shadow: 0px 16px 24px rgba(107, 107, 107, 0.2);
     transition: box-shadow 350ms linear;
+}
+
+.accent-text {
+    position: absolute;
+    top: 0px;
+    left: 40px;
+
+    font-weight: 900;
+    font-size: 200px;
+    color: var(--text-lgery);
+    opacity: 0.6;
 }
 
 .news-title {
