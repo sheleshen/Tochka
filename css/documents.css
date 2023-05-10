@@ -7,15 +7,6 @@
     font-family: 'Nunito Sans', sans-serif;
 }
 
-/* Общие */
-
-* {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    position: relative;
-    font-family: 'Nunito Sans', sans-serif;
-}
-
 :root {
     /* MAIN */
     --main-grey: #4C4C4C;
