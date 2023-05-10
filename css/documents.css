@@ -126,9 +126,18 @@ a:hover {
     transition: color 300ms linear;
 }
 
-
 .link-logo:hover {
     color: var(--secondary-light);
+}
+
+.all-link {
+    text-decoration: none;
+    color: var(--main-sand);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    text-transform: none;
+    cursor: pointer;
 }
 
 /* КОНТЕЙНЕРЫ */
@@ -363,6 +372,65 @@ h2 {
     background: rgba(255, 255, 255, 0.6);
 }
 
+/* Документы по отелям */
+
+.documents-list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+}
+
+.block-title {
+    display: flex;
+    align-items: center;
+    padding-bottom: 32px;
+}
+
+.documents-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    border: 2px solid #B8A88A;
+    margin-right: 28px;
+}
+
+.documents-title {
+    text-transform: uppercase;
+    padding: 0px;
+}
+
+.block-text {
+    padding-left: 48px;
+    padding-bottom: 48px;
+    display: inline-block;
+    position: relative;
+}
+
+.block-text-lc {
+    padding-left: 48px;
+    display: inline-block;
+    position: relative;
+}
+
+.block-text:before {
+    content: " ";
+    height: 305px;
+    border: 1px dashed var(--main-sand);
+    left: 9px;
+    top: -49px;
+
+    position: absolute;
+}
+
+.block-text-lc:before {
+    content: " ";
+    height: 230px;
+    border: 1px dashed var(--main-sand);
+    left: 9px;
+    top: -49px;
+
+    position: absolute;
+}
 
 
 /* Полезные ссылки */

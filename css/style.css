@@ -122,6 +122,12 @@ a:hover {
     color: var(--secondary-light);
 }
 
+.all-link {
+    text-decoration: none;
+    color: var(--main-sand);
+    cursor: pointer;
+}
+
 /* КОНТЕЙНЕРЫ */
 
 .container {
