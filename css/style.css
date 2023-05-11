@@ -414,6 +414,10 @@ label {
     border: none;
 }
 
+.input-field::placeholder {
+    color: var(--field-text);
+}
+
 .field-icon {
     font-size: 20px;
     color: var(--field-icon);

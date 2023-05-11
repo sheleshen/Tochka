@@ -393,6 +393,65 @@ h2 {
     font-size: 16px;
 }
 
+/*  */
+
+.rubricator-list {
+    display: flex;
+    gap: 24px;
+}
+
+.rubricator-item {
+    width: calc((100% - 24px)/2);
+    position: relative;
+
+    padding-top: 305px;
+    padding-bottom: 35px;
+}
+
+.merch-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+/* .rubricator-cloth, .rubricator-accessories > * {
+    position: relative;
+    z-index: 1;
+} */
+
+.rubricator-cloth {
+    font-weight: 700;
+    font-size: 32px;
+    background-color: var(--text-white);
+    padding: 21px 50px;
+
+    display: inline-block;
+    margin-left: auto;
+}
+
+/* .rubricator {
+    background-color: var(--text-white);
+    padding: 21px 50px;
+    display: flex;
+    justify-content: end;
+} */
+
+.rubricator-accessories {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--text-white);
+
+    background-color: var(--text-disabled);
+    padding: 21px 50px;
+    display: inline-block;
+}
+
 /* footer */
 
 .section-footer {
