@@ -381,7 +381,7 @@ h2 {
     width: 20px;
     height: 20px;
     border-radius: 20px;
-    border: 2px solid #B8A88A;
+    border: 2px solid var(--main-sand2);
     margin-right: 28px;
 }
 
@@ -406,7 +406,7 @@ h2 {
 .block-text:before {
     content: " ";
     height: 305px;
-    border: 1px dashed var(--main-sand);
+    border: 1px dashed var(--main-sand2);
     left: 9px;
     top: -49px;
 
@@ -416,7 +416,7 @@ h2 {
 .block-text-lc:before {
     content: " ";
     height: 230px;
-    border: 1px dashed var(--main-sand);
+    border: 1px dashed var(--main-sand2);
     left: 9px;
     top: -49px;
 
