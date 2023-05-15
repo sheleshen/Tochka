@@ -36,6 +36,7 @@
 
     /* FIELD */
     --field-bg: #F7F7FD;
+    --field-bg2: #f0f0f7;
     --field-title: #6B6B6B;
     --field-text: #212121;
     --field-icon: #212121;
@@ -456,7 +457,100 @@ h2 {
 
 /* ЗАЯВКА ДЛЯ РАБОТЫ */
 
+.form-work {
+    padding-bottom: 80px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
 
+    margin: 0 auto;
+}
+
+.field-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+
+    background: var(--field-bg2);
+    border-radius: 4px;
+    padding: 8px 20px;
+    max-height: 56px;
+    min-width: 280px;
+}
+
+.field-two-item {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    width: 100%;
+}
+
+.width-one-item {
+    width: 100%;
+}
+
+.width-two-item {
+    width: calc((100% - 16px)/2);
+}
+
+.field-item-textarea {
+    background: var(--field-bg2);
+    border-radius: 4px;
+    padding: 8px 20px;
+
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: var(--field-bg2);
+}
+
+label {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 133%;
+    color: var(--field-title);
+}
+
+.input-field {
+    padding: 0;
+    color: var(--field-text);
+    background-color: var(--field-bg2);
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.input-field:active {
+    outline: none;
+    border: none;
+}
+
+input::placeholder {
+    color: var(--text-black);
+}
+
+.entry-field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.description-form {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    padding-top: 8px;
+}
 
 /* footer */
 
