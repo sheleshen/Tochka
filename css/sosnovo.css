@@ -13,6 +13,7 @@
     --main-sand-dark:#645E52;
     --main-sand: #A18348;
     --main-sand-light: #EDD9B2;
+    --main-sand-light-op40: hsla(40, 62%, 81%, 0.4);
 
     /* BG */
     --bg-elight: #F4F3FE;
@@ -32,6 +33,7 @@
     --text-disabled: #6B6B6B;
     --text-sand: #A18348;
     --text-lgery: #DEDEDE;
+    --text-red: #F93232;
 
     /* FIELD */
     --field-bg: #F7F7FD;
@@ -72,6 +74,7 @@
     --gap-10: 10px;
     --gap-16: 16px;
     --gap-20: 20px;
+    --gap-32: 32px;
     --gap-36: 36px;
 }
 
@@ -95,11 +98,11 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
     font-family: 'Nunito Sans', sans-serif;
 }
 
-.ul-list {
+.ul-list, .ol-list {
     list-style-position: inside;
 }
 
-.buying-li {
+.buying-li, .number-li {
     font-weight: 400;
     font-size: 18px;
     line-height: 140%;
@@ -315,6 +318,11 @@ h2 {
 
 .title-left {
     text-align: left;
+    padding-bottom: 16px;
+}
+
+.title-padding0 {
+    padding-top: 0;
 }
 
 .title-no-pt {
@@ -390,9 +398,10 @@ h2 {
 .filter-hero {
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     gap: var(--gap-24);
     padding-bottom: 80px;
+    /* margin: 0px auto; */
 }
 
 .field-item {
@@ -445,14 +454,13 @@ label {
 
 /* Сосново */
 
-.title-hotels {
+.title-hotel {
     color: var(--text-sand);
 }
 
-.description-hotels {
+.description-hotel {
     font-weight: 400;
     font-size: 16px;
-    line-height: 140%;
     color: var(--text-disabled);
     padding-bottom: 24px;
 }
@@ -468,7 +476,6 @@ label {
 .text-item {
     font-weight: 400;
     font-size: 16px;
-    line-height: 140%;
 
     width: calc((100% - 24px)/2);
 }
@@ -493,7 +500,6 @@ label {
 .prizes-item {
     font-weight: 400;
     font-size: 16px;
-    line-height: 140%;
 
     width: calc((100% - var(--gap-24))/2);
 }
@@ -577,7 +583,6 @@ label {
 .description-item {
     font-weight: 400;
     font-size: 16px;
-    line-height: 140%;
     color: var(--text-white);
     padding-bottom: 24px;
 }
@@ -597,16 +602,14 @@ label {
 .subtitle-info-numbers {
     font-weight: 400;
     font-size: 16px;
-    line-height: 140%;
     color: var(--text-disabled);
     text-transform: uppercase;
     padding-bottom: 24px;
 }
 
-.subtitle-info-descriptio{
+.numbers-info-description {
     font-weight: 400;
     font-size: 16px;
-    line-height: 140%;
 }
 
 .attention {
@@ -620,17 +623,97 @@ label {
     font-weight: 700;
     font-size: 24px;
     line-height: 140%;
-    color: #F93232;
+    color: var(--text-red);
     padding-bottom: 8px;
 }
 
-.subtitle-info-attention {
+.numbers-info-attention {
     padding-bottom: 8px;
 }
 
 /* Номера  */
 
+.section-hotels {
+    padding: 56px 0px 0px 0px;
+}
 
+.hotels-list {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.hotels-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.img-widht {
+    width: 93%;
+    object-fit: cover;
+}
+
+.hotels-sb {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.text-hotels {
+    width: 49%;
+    margin-left: 24px;
+}
+
+.title-hotels {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    text-align: left;
+    padding: 0px 0px 16px 0px;
+}
+
+.accent-hotels {
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--text-disabled);
+    padding-bottom: 24px;
+}
+
+.description-hotels {
+    font-size: 16px;
+    line-height: 140%;
+    padding-bottom: 16px;
+}
+
+.info-hotels {
+    background-color: var(--bg-white);
+    box-shadow: 0px 8px 16px rgba(107, 107, 107, 0.2);
+    border-radius: 20px;
+    padding: 30px 0px 30px 30px;
+
+    width: 60%;
+    margin-bottom: 24px;
+}
+
+.info-list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: var(--gap-10);
+    width: calc((100% - 32px*3)/4);
+}
+
+.info-description {
+    font-size: 16px;
+}
 
 /* Важно */
 
@@ -638,19 +721,220 @@ label {
 
 /* Кафе */
 
+.bg-img-cafe {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) -97.37%, rgba(0, 0, 0, 0.6) 2.63%), url(/images/sosnovo/bg-sosnovo-2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
+.title-cafe{
+    color: var(--text-white);
+}
+
+.cafe-list {
+    border-top: 1px solid var(--main-sand-light-op40);
+    display: flex;
+    padding-bottom: 80px;
+}
+
+.cafe-info {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-32);
+    padding: 24px 24px 0px 0px;
+    border-right: 1px solid var(--main-sand-light-op40);
+}
+
+.subtitle-cafe {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    color: var(--text-white);
+    padding-bottom: 8px;
+}
+
+.description-cafe {
+    font-size: 18px;
+    line-height: 140%;
+    color: var(--text-white);
+}
+
+.tabs-list {
+    width: 70%;
+    padding: 24px 0px 0px 24px;
+}
+
+.tabs-cafe {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding-bottom: 20px;
+}
+
+.tabs-item {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--text-lbrown);
+}
+
+.description-text-cafe {
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--text-white);
+}
 
 /* На территории отеля */
 
+.ol-list {
+    padding-bottom: 16px;
+}
+
+.description-attention {
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--text-red);
+}
+
+/* На территории отеля. Пикник */
+
+.picnic-section {
+    margin-top: 56px;
+}
+
+.picnic-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.text-picnic {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-bottom: 45px;
+}
+
+.title-picnic {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    padding-bottom: 12px;
+}
+
+.accent-picnic{
+    font-size: 16px;
+    color: var(--text-disabled);
+    padding-bottom: 24px;
+}
+
+.description-picnic {
+    font-size: 16px;
+    padding-bottom: 24px;
+}
+
+.text-selection {
+    font-weight: 700;
+}
+
+.subtitle-picnic{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--text-sand);
+}
 
 
 /* Как к нам добраться? */
 
+.routes-description {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 140%;
+    padding-bottom: 24px;
+}
 
+.routes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 40px;
+}
+
+.routes-item {
+    padding: 24px;
+    width: 100%;
+
+    background: var(--bg-white);
+    box-shadow: 0px 4px 16px 1px rgba(107, 107, 107, 0.2);
+    border-radius: 20px;
+}
+
+.texi-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.routes {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--text-disabled);
+}
+
+.routes-icon {
+    cursor: pointer;
+}
+
+.route-description {
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--text-disabled);
+    padding-top: 16px;
+}
 
 /* Контакты */
 
+.contacts-section {
+    margin: 80px 0px 0px 0px;
+} 
 
+.contacts-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.text-contacts {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-32);
+
+    margin-bottom: 80px;
+}
+
+.accent-contacts {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--text-sand);
+    padding-bottom: 24px;
+}
+
+.description-contacts {
+    font-size: 16px;
+}
+
+.subtitle-contacts {
+    font-size: 16px;
+    color: var(--text-disabled);
+    padding-bottom: 12px;
+}
 
 /* footer */
 
