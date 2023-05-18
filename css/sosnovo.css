@@ -12,6 +12,7 @@
     --main-grey: #4C4C4C;
     --main-sand-dark:#645E52;
     --main-sand: #A18348;
+    --main-sand2: #B8A88A;
     --main-sand-light: #EDD9B2;
     --main-sand-light-op40: hsla(40, 62%, 81%, 0.4);
 
@@ -717,7 +718,59 @@ label {
 
 /* Важно */
 
+.important-section {
+    padding: 24px;
+    background: var(--bg-white);
+    box-shadow: 0px 16px 24px rgba(107, 107, 107, 0.2);
+    border-radius: 20px;
+    margin-bottom: 80px;
+}
 
+.important-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.important-list:before {
+    content: " ";
+    min-height: 400px;
+    border: 1px dashed var(--main-sand2);
+    left: 9px;
+    top: 0px;
+
+    position: absolute;
+}
+
+.block-title {
+    display: flex;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+.important-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    border: 2px solid var(--main-sand2);
+    background-color: #fff;
+    margin-right: 28px;
+}
+
+.important-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--text-sand);
+}
+
+.important-description {
+    font-size: 18px;
+}
+
+.block-text {
+    padding-left: 48px;
+    padding-bottom: 32px;
+}
 
 /* Кафе */
 

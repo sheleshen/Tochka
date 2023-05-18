@@ -12,7 +12,9 @@
     --main-grey: #4C4C4C;
     --main-sand-dark:#645E52;
     --main-sand: #A18348;
+    --main-sand2: #B8A88A;
     --main-sand-light: #EDD9B2;
+    --main-sand-light-op40: hsla(40, 62%, 81%, 0.4);
 
     /* BG */
     --bg-elight: #F4F3FE;
