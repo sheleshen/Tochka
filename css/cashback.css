@@ -135,6 +135,30 @@ a:hover {
     transition: color 300ms linear;
 }
 
+.link-text {
+    text-decoration: none;
+    color: var(--text-sand);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-transform: none;
+}
+
+.link-text16 {
+    font-size: 16px;
+}
+
+.link-text18 {
+    font-size: 18px;
+}
+
+.link-text:hover {
+    color: var(--text-brown);
+}
+
+.link-text:active {
+    color: var(--text-brown);
+}
 
 .link-logo:hover {
     color: var(--secondary-light);
@@ -392,6 +416,38 @@ h2 {
     margin: 0px auto;
 }
 
+.element-shadow {
+    background: var(--bg-white);
+    box-shadow: 0px 8px 16px rgba(107, 107, 107, 0.2);
+    border-radius: 20px;
+    padding: 24px;
+}
+
+.font-size-accent {
+    font-size: 56px;
+    font-weight: 400;
+}
+
+.accent-number {
+    font-weight: 900;
+    font-size: 300px;
+    line-height: 140%;
+    color: var(--text-lgery);
+    opacity: 0.4;
+} 
+
+.accent-number-left {
+    position: absolute;
+    top: -70px;
+    left: -100px;
+}
+
+.accent-number-right {
+    position: absolute;
+    top: -70px;
+    right: -100px;
+}
+
 /* header */
 
 .section-header {
@@ -448,6 +504,93 @@ h2 {
     padding: 32px 0px;
 }
 
+/* Программа выплат за туры по России */
+
+.payments-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.payments-item {
+    width: calc(100% / 2);
+}
+
+.payments-text {
+    font-size: 16px;
+    padding-bottom: 16px;
+    padding-right: 24px;
+}
+
+.payments-text-accent {
+    font-size: 16px;
+    color: var(--text-red);
+    padding-bottom: 16px;
+    padding-right: 24px;
+}
+
+.subtitle-payments {
+    font-weight: 300;
+    font-size: 24px;
+    padding-bottom: 24px;
+}
+
+.rules-payments-list {
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap-24);
+    padding-bottom: 16px;
+}
+
+.rules-payments-item {
+    width: calc((100% - var(--gap-24)*2)/3);
+}
+
+.rules-item-title {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--text-disabled);
+    padding-bottom: 12px;
+}
+
+.rules-item-accent {
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--text-lbrown);
+    padding-bottom: 4px;
+}
+
+.rules-item-description {
+    font-size: 16px;
+    color: var(--text-disabled);
+}
+
+.rules-payments-footnote {
+    font-size: 13px;
+    color: var(--text-lbrown);
+}
+
+/* ТЕКСТОВАЯ ЧАСТЬ */
+
+.text-list {
+    display: flex;
+    flex-direction: row;
+    padding-top: 80px;
+    padding-bottom: 16px;
+}
+
+.text-item {
+    width: calc(100% / 2);
+}
+
+.text-description {
+    font-size: 16px;
+}
+
+.text-description-accent {
+    font-size: 16px;
+    color: var(--text-disabled);
+}
+
 /* 4 шага для получения кэшбэка за отдых */
 
 .rules-list {
@@ -493,9 +636,6 @@ h2 {
     color: var(--text-sand);
     padding-bottom: 16px;
 }
-
-
-
 
 /* Вопросы и ответы */
 
