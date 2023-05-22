@@ -62,21 +62,11 @@
     </section>
 
     <main> 
-        <!-- hero block -->
-        <section class="bg-image">
-            <div class="container">
-                <div class="text-hero">
-                    <h1 class="title-hero">
-                        Забронировать отдых в сети отелей «на карте»
-                    </h1>
-                </div>
-            </div>
-        </section>
 
         <!-- hotels list -->
         <section class="container">
-            <div class="hotels-list">
-                <div class="hotels-item element-shadow">
+            <div class="choice-hotels-list">
+                <div class="choice-hotels-item element-shadow">
                     <p class="subtitle-hotels">
                         «На карте. Сосново»
                     </p>
@@ -85,7 +75,7 @@
                     </p>
                 </div>
 
-                <div class="hotels-item element-shadow">
+                <div class="choice-hotels-item element-shadow">
                     <p class="subtitle-hotels">
                         «На карте. Салми»
                     </p>
@@ -94,7 +84,7 @@
                     </p>
                 </div>
 
-                <div class="hotels-item element-shadow">
+                <div class="choice-hotels-item element-shadow">
                     <p class="subtitle-hotels">
                         «На карте. Лахденпохья»
                     </p>
@@ -103,7 +93,7 @@
                     </p>
                 </div>
 
-                <div class="hotels-item element-shadow">
+                <div class="choice-hotels-item element-shadow">
                     <p class="subtitle-hotels">
                         «На карте. Олонец»
                     </p>
@@ -116,11 +106,11 @@
 
         <!-- форма ввода данных -->
         <section class="container">
-            <h2>
-                Выберите даты заезда, выезда и количество гостей
+            <h2 class="title-no-pt">
+                Выберите номер
             </h2>
             <form class="form-work" action="">
-                <!-- первая строка полей -->
+
                 <div class="input-list">
                     <div class="field-item">
                         <div class="entry-field">
@@ -141,56 +131,227 @@
                         </div>
                         <img src="/icon/calendar-black.svg" alt="">
                     </div>
+
+                    <a href="">
+                        <button class="btn-sec">
+                            Изменить даты
+                        </button>
+                    </a>
                 </div>
 
-                <!-- вторая строка полей -->
-                <div class="width-full-screen">
-                    <p class="text-form">
-                        Размещение в номере
-                    </p>
-                    <div class="input-list">
-                        <div class="field-item">
-                            <div class="entry-field">
-                                <label for="adults">
-                                    Взрослые от 14 лет и старше
-                                </label>
-                                <input class="input-field" placeholder="" type="text" name="adults">
-                            </div>
-                            <img src="/icon/calendar-black.svg" alt="">
-                        </div>
+            </form>
+        </section>
 
-                        <div class="field-item">
-                            <img src="/icon/plus-black.svg" alt="">
-                            <div class="entry-field">
-                                <p class="text-form-notpad">
-                                    Добавить детей
-                                </p>
+        <!-- Правила действия подарочных сертификатов -->
+        <section class="container">
+            <p class="title-rules">
+                Бронируйте выгоднее
+            </p>
+            <div class="rules-list">
+                <div class="rules-item">
+                    <div class="rules-circle"></div>
+                    <div class="rules-text">
+                        <p class="subtitle">
+                            Бронирование без посредников
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rules-item">
+                    <div class="rules-circle"></div>
+                    <div class="rules-text">
+                        <p class="subtitle">
+                            Бесплатное размещение детей до 5 лет
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rules-item">
+                    <div class="rules-circle"></div>
+                    <div class="rules-text">
+                        <p class="subtitle">
+                            Бесплатная парковка
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Номера -->
+        <section class="section-hotels">
+            <div class="hotels-list">
+                <!-- Стандарт с отдельным входом -->
+                <div class="hotels-item">
+                    <div class="hotels-img">
+                        <img class="img-widht" src="/images/sosnovo/hotels-1.png" alt="Стандарт с отдельным входом">
+                    </div>
+                    <div class="container hotels-sb">
+                        <div class="text-hotels">
+                            <p class="title-hotels">
+                                Стандарт с отдельным входом
+                            </p>
+                            <p class="accent-hotels">
+                                31 номер
+                            </p>
+                        </div>
+                        <div class="info-hotels">
+                            <div class="info-list">
+                                <div class="info-item">
+                                    <img src="/icon/people.svg" alt="">
+                                    <p class="info-description">
+                                        1-2 человека
+                                    </p>
+                                </div>
+                                <div class="info-item">
+                                    <img src="/icon/arrow.svg" alt="">
+                                    <p class="info-description">
+                                        18 кв. м.
+                                    </p>
+                                </div>
+                                <div class="info-item">
+                                    <img src="/icon/cup.svg" alt="">
+                                    <p class="info-description">
+                                        Завтрак
+                                    </p>
+                                </div>
+                                <div class="info-item">
+                                    <img src="/icon/tv.svg" alt="">
+                                    <p class="info-description">
+                                        Телевизор
+                                    </p>
+                                </div>
                             </div>
+                        </div>
+                        <div class="text-hotels">
+                            <p class="description-hotels">
+                                Большая двуспальная или две односпальные кровати
+                                <br>Ванная комната с душевой кабиной
+                                <br>Гардеробный шкаф
+                                <br>Напольный кондиционер
+                                <br>Холодильник
+                                <br>Проживание с домашними питомцами не предусмотрено
+                            </p>
+                            <button class="btn smoll">
+                                Забронировать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Студия с отдельным входом -->
+                <div class="hotels-item">
+                    <div class="hotels-img">
+                        <img class="img-widht" src="/images/sosnovo/hotels-2.png" alt="Стандарт с отдельным входом">
+                    </div>
+                    <div class="container hotels-sb">
+                        <div class="text-hotels">
+                            <p class="title-hotels">
+                                Стандарт с отдельным входом
+                            </p>
+                            <p class="accent-hotels">
+                                9 номеров | самый приватный вариант
+                            </p>
+                        </div>
+                        <div class="info-hotels">
+                            <div class="info-list">
+                                <div class="info-item">
+                                    <img src="/icon/people.svg" alt="">
+                                    <p class="info-description">
+                                        1-2 человека
+                                    </p>
+                                </div>
+                                <div class="info-item">
+                                    <img src="/icon/arrow.svg" alt="">
+                                    <p class="info-description">
+                                        34 кв. м.
+                                    </p>
+                                </div>
+                                <div class="info-item">
+                                    <img src="/icon/cup.svg" alt="">
+                                    <p class="info-description">
+                                        Завтрак
+                                    </p>
+                                </div>
+                                <div class="info-item">
+                                    <img src="/icon/eyes.svg" alt="">
+                                    <p class="info-description">
+                                        Терасса
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-hotels">
+                            <p class="description-hotels">
+                                Большая двуспальная или две односпальные кровати
+                                <br>Кухня
+                                <br>Холодильник
+                                <br>Номер рассчитан на 2 гостей с возможностью предоставления одного дополнительного места для гостей до 14 лет
+                                <br>Проживание с домашними питомцами не предусмотрено
+                            </p>
+                            <button class="btn smoll">
+                                Забронировать
+                            </button>
                         </div>
                     </div>
                 </div>
 
-                <!-- третья строка -->
-                <div class="btn-list">
-                    <p class="text-form text-form-notpad">
-                        Нужен ещё 1 номер
-                    </p>
-                    <img src="/icon/+.svg" alt="">
+                <!-- Семейный номер Студия с отдельным входом -->
+                <div class="hotels-item">
+                    <div class="hotels-img">
+                        <img class="img-widht" src="/images/sosnovo/hotels-3.png" alt="Стандарт с отдельным входом">
+                    </div>
+                    <div class="container hotels-sb">
+                        <div class="text-hotels">
+                            <p class="title-hotels">
+                                Семейный номер Студия с отдельным входом
+                            </p>
+                            <p class="accent-hotels">
+                                6 номеров | рядом с детской площадкой
+                            </p>
+                        </div>
+                        <div class="info-hotels">
+                            <div class="info-list">
+                                <div class="info-item">
+                                    <img src="/icon/people.svg" alt="">
+                                    <p class="info-description">
+                                        1-4 человека
+                                    </p>
+                                </div>
+                                <div class="info-item">
+                                    <img src="/icon/arrow.svg" alt="">
+                                    <p class="info-description">
+                                        36 кв. м.
+                                    </p>
+                                </div>
+                                <div class="info-item">
+                                    <img src="/icon/cup.svg" alt="">
+                                    <p class="info-description">
+                                        Завтрак
+                                    </p>
+                                </div>
+                                <div class="info-item">
+                                    <img src="/icon/eyes.svg" alt="">
+                                    <p class="info-description">
+                                        Терасса
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-hotels">
+                            <p class="description-hotels">
+                                Большая двуспальная или две односпальные кровати
+                                <br>Кухня
+                                <br>Холодильник
+                                <br>Номер рассчитан на 2 гостей с возможностью предоставления двух дополнительных мест для гостей до 14 лет (раскладной диван /стенка кровать)
+                                <br>Проживание с домашними питомцами не предусмотрено
+                            </p>
+                            <button class="btn smoll">
+                                Забронировать
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="linear-sand"></div>
-
-                <!-- четвертая строка -->
-                <div class="btn-list">
-                    <img src="/icon/check.svg" alt="">
-                    <p class="text-form text-form-notpad">
-                        У меня есть промокод
-                    </p>
-                </div>
-
-                <button class="btn normal btn-ctr">
-                    Найти
-                </button>
-            </form>
+            </div>
         </section>
 
         <!-- Календарь дат -->

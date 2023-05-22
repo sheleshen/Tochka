@@ -485,20 +485,20 @@ h2 {
 
 /* hotels list */
 
-.hotels-list {
+.choice-hotels-list {
     display: flex;
     flex-direction: row;
     gap: var(--gap-16);
-    padding-top: 80px;
+    padding-top: 40px;
     padding-bottom: 40px;
 }
 
-.hotels-item {
+.choice-hotels-item {
     width: calc((100% - var(--gap-16)*3)/4);
     border: 1px solid var(--bg-white);
 }
 
-.hotels-item:hover {
+.choice-hotels-item:hover {
     border: 1px solid var(--main-sand2);
     box-shadow: none;
     transition: all 350ms linear;
@@ -517,19 +517,17 @@ h2 {
 /* Форма ввода данных */
 
 .form-work {
-    width: 60%;
     display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 16px;
-
-    margin: 0 auto;
 }
 
 .input-list {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     gap: var(--gap-16);
-    width: 100%;
+
+    margin: 0 auto;
+    padding-bottom: 60px;
 }
 
 .field-item {
@@ -542,7 +540,7 @@ h2 {
     border-radius: 4px;
     padding: 8px 20px;
     max-height: 56px;
-    width: calc((100% - var(--gap-16))/2);
+    max-width: 400px;
 }
 
 label {
@@ -580,12 +578,142 @@ input::placeholder {
     width: 100%;
 }
 
-.text-form {
-    padding-bottom: 8px;
+/* Бронируйте выгоднее */
+
+.title-rules {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    text-align: center;
+    padding-bottom: 24px;
 }
 
-.text-form-notpad {
-    padding-bottom: 0px;
+.rules-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+}
+
+.rules-item {
+    width: calc(100% / 3);
+    padding-right: 24px;
+    overflow: hidden;
+}
+
+.rules-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    border: 2px solid var(--main-sand2);
+    margin-bottom: 24px;
+}
+
+.rules-text::before {
+    content: " ";
+    min-width: 490px;
+    border: 1px dashed var(--main-sand2);
+    left: 20px;
+    top: -35px;
+
+    position: absolute;
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--text-sand);
+    padding-bottom: 16px;
+}
+
+.rules-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+/* Номера  */
+
+.section-hotels {
+    padding: 0px 0px 0px 0px;
+}
+
+.hotels-list {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.hotels-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.img-widht {
+    width: 93%;
+    object-fit: cover;
+}
+
+.hotels-sb {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.text-hotels {
+    width: 49%;
+    margin-left: 24px;
+}
+
+.title-hotels {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    text-align: left;
+    padding: 0px 0px 16px 0px;
+}
+
+.accent-hotels {
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--text-disabled);
+    padding-bottom: 24px;
+}
+
+.description-hotels {
+    font-size: 16px;
+    line-height: 140%;
+    padding-bottom: 16px;
+}
+
+.info-hotels {
+    background-color: var(--bg-white);
+    box-shadow: 0px 8px 16px rgba(107, 107, 107, 0.2);
+    border-radius: 20px;
+    padding: 30px 0px 30px 30px;
+
+    width: 60%;
+    margin-bottom: 24px;
+}
+
+.info-list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: var(--gap-10);
+    width: calc((100% - 32px*3)/4);
+}
+
+.info-description {
+    font-size: 16px;
 }
 
 /* Календарь дат */
