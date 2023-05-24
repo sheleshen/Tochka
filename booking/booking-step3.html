@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/css/reset.css">
 
     <!-- Подключаем стили= -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/booking-step3.css">
 
     <!-- Шрифт Nunito Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -107,8 +107,16 @@
         <!-- форма ввода данных -->
         <section class="container">
             <h2 class="title-no-pt">
-                Выберите номер
+                Выберите тариф
             </h2>
+            <div class="btn-absolute">
+                <a href="/booking/booking-step2.html">
+                    <button class="btn-tert btn-list extrasmoll">
+                        <img src="/icon/arrow-btn-left.svg" alt="">
+                        К номерам
+                    </button>
+                </a>
+            </div>
             <form class="form-work" action="">
 
                 <div class="input-list">
@@ -117,9 +125,9 @@
                             <label for="arrival date">
                                 Дата заезда
                             </label>
-                            <input class="input-field" placeholder="" type="text" name="arrival date">
+                            <input class="input-field" placeholder="22.10.2023" type="text" name="arrival date">
                         </div>
-                        <img src="/icon/calendar-black.svg" alt="">
+                        <img src="/icon/calendar-grey.svg" alt="">
                     </div>
 
                     <div class="field-item">
@@ -127,20 +135,91 @@
                             <label for="date of departure">
                                 Дата выезда
                             </label>
-                            <input class="input-field" placeholder="" type="text" name="date of departure">
+                            <input class="input-field" placeholder="25.10.2023" type="text" name="date of departure">
                         </div>
-                        <img src="/icon/calendar-black.svg" alt="">
+                        <img src="/icon/calendar-grey.svg" alt="">
                     </div>
 
-                    <a href="">
-                        <button class="btn-sec">
-                            Изменить даты
-                        </button>
-                    </a>
+                    <div class="field-item">
+                        <div class="entry-field">
+                            <label for="Number of guests">
+                                Количество гостей
+                            </label>
+                            <input class="input-field" placeholder="2 взрослых" type="text" name="Number of guests">
+                        </div>
+                    </div>
+
+                    <div class="field-item">
+                        <div class="entry-field">
+                            <label for="Number of rooms">
+                                Количество номеров
+                            </label>
+                            <input class="input-field" placeholder="2 взрослых" type="text" name="Number of rooms">
+                        </div>
+                    </div>
                 </div>
 
             </form>
         </section>
+
+        <!-- НОМЕР ОПИСАНИЕ -->
+        <section class="container">
+            <div class="rooms-desccription-list">
+                <div class="rooms-desccription-item rooms-img">
+                    <div class="rooms-desccription-text">
+                        <img src="/icon/foto-white.svg" alt="">
+                        <p class="rooms-desccription">
+                            44 фото
+                        </p>
+                    </div>
+                </div>
+                <div class="rooms-desccription-item rooms-text">
+                    <p class="title-rooms-desccription">
+                        Стандарт с отдельным входом
+                    </p>
+                    <p class="subtitle-rooms-desccription">
+                        31 номер
+                    </p>
+                    <div class="characteristics-list element-shadow">
+                        <div class="characteristics-item">
+                            <img src="/icon/people.svg" alt="">
+                            <p class="characteristics-text">
+                                1-2 человека
+                            </p>
+                        </div>
+
+                        <div class="characteristics-item">
+                            <img src="/icon/arrow.svg" alt="">
+                            <p class="characteristics-text">
+                                18 кв. м.
+                            </p>
+                        </div>
+
+                        <div class="characteristics-item">
+                            <img src="/icon/wi-fi.svg" alt="">
+                            <p class="characteristics-text">
+                                Wi-Fi
+                            </p>
+                        </div>
+
+                        <div class="characteristics-item">
+                            <img src="/icon/paint.svg" alt="">
+                            <p class="characteristics-text">
+                                Панорамные окна
+                            </p>
+                        </div>
+
+                        <div class="characteristics-item characteristics-item-accent">
+                            <p class="characteristics-text-accent">
+                                Ещё 20
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ТАРИФЫ -->
 
     </main> 
 
